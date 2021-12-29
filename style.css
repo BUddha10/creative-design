@@ -197,3 +197,152 @@ body {
   font-weight: 700;
 }
 /* End of customer section */
+
+/* Team Section */
+.team-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.team-heading {
+  font-size: 10rem;
+  color: #999999;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.1;
+  text-shadow: 2rem 2rem 4rem #aaaaaa;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+}
+.team-member {
+  position: relative;
+  width: 35rem;
+  background-color: #fffeee;
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.team-member:hover {
+  opacity: 1;
+}
+
+.team-member:first-child {
+  align-self: flex-start;
+}
+.team-member:last-child {
+  align-self: flex-end;
+}
+
+.team-member-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.team-member-name {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #796717;
+  margin-top: 2rem;
+}
+
+.team-member-name span {
+  font-size: 1.7rem;
+}
+
+.team-member-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 2rem 0;
+}
+
+.team-member-skills li {
+  color: #505050;
+  font-size: 1.5rem;
+}
+
+.projects-btn {
+  background-color: #fab34a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.story-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #222;
+  padding: 0.5rem;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: transform 0.5s;
+}
+
+.change.story-btn {
+  transform: rotate(405deg);
+}
+
+.story-btn-line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: white;
+}
+
+.story {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 69, 69, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 50rem 0 50rem 50rem;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.change.story {
+  transform: scale(1);
+  border-radius: 0;
+}
+
+.story-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.story-paragraph {
+  font-size: 1.8rem;
+  color: #eee;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  text-indent: 2rem;
+}
+/* End of Team Section */
