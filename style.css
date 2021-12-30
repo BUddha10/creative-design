@@ -69,7 +69,7 @@ html {
 }
 
 .navbar-link {
-  font-size: 2.2rem !important;
+  font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -474,5 +474,73 @@ html {
   background-color: #32e7ff;
   transform: scale(1.2);
 }
-
 /* end of up arrow btn */
+
+/* Responsive design */
+@media (max-width: 1400px) {
+  .floating-bg {
+    top: -120vw;
+  }
+  .header-heading {
+    font-size: 6rem;
+    top: 25vw;
+    width: 70rem;
+  }
+
+  .navbar-link {
+    font-size: 2rem;
+  }
+
+  .logo {
+    top: 75%;
+  }
+
+  .logo i {
+    font-size: 10rem;
+  }
+
+  .customer-section {
+    height: auto;
+  }
+  .customer-heading,
+  .team-heading,
+  .contact-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+
+  .customers-wrapper,
+  .team-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .customer,
+  .team-member {
+    margin: 5rem 10rem;
+  }
+
+  .team-section {
+    height: auto;
+  }
+
+  .form-container {
+    height: 60%;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .contact-form {
+    transform: translateY(0);
+  }
+
+  .contact-form:hover {
+    transform: translateY(-1rem);
+  }
+
+  .copyright {
+    margin: 5rem 0 4rem 0;
+  }
+}
+/* End of responsive design */
