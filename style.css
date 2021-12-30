@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .container {
   width: 100%;
@@ -451,3 +452,27 @@ html {
   margin-top: 5rem;
 }
 /* end of contact section */
+
+/* up arrow btn */
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  border-radius: 50%;
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  font-size: 1.6rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.scroll-up-btn:hover {
+  background-color: #32e7ff;
+  transform: scale(1.2);
+}
+
+/* end of up arrow btn */
