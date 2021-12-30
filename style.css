@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .container {
   width: 100%;
@@ -68,7 +69,7 @@ html {
 }
 
 .navbar-link {
-  font-size: 2.2rem !important;
+  font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -451,3 +452,200 @@ html {
   margin-top: 5rem;
 }
 /* end of contact section */
+
+/* up arrow btn */
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  border-radius: 50%;
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  font-size: 1.6rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.scroll-up-btn:hover {
+  background-color: #32e7ff;
+  transform: scale(1.2);
+}
+/* end of up arrow btn */
+
+/* Responsive design */
+@media (max-width: 1400px) {
+  .floating-bg {
+    top: -120vw;
+  }
+  .header-heading {
+    font-size: 6rem;
+    top: 25vw;
+    width: 70rem;
+  }
+
+  .navbar-link {
+    font-size: 2rem;
+  }
+
+  .logo {
+    top: 75%;
+  }
+
+  .logo i {
+    font-size: 10rem;
+  }
+
+  .customer-section {
+    height: auto;
+  }
+  .customer-heading,
+  .team-heading,
+  .contact-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+
+  .customers-wrapper,
+  .team-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .customer,
+  .team-member {
+    margin: 5rem 10rem;
+  }
+
+  .team-section {
+    height: auto;
+  }
+
+  .form-container {
+    height: 60%;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .contact-form {
+    transform: translateY(0);
+  }
+
+  .contact-form:hover {
+    transform: translateY(-1rem);
+  }
+
+  .copyright {
+    margin: 5rem 0 4rem 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .floating-bg {
+    top: -110vw;
+  }
+
+  .header-heading {
+    font-size: 5rem;
+    top: 30vw;
+    width: 60rem;
+  }
+
+  .logo i {
+    font-size: 9rem;
+  }
+
+  .customer-heading,
+  .team-heading,
+  .contact-heading {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .floating-bg {
+    top: -100vw;
+  }
+
+  .header-heading {
+    top: 40vw;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  .floating-bg {
+    top: -90vw;
+  }
+
+  .header-heading {
+    top: 48vw;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+
+  .floating-bg {
+    top: -70vw;
+  }
+
+  .header-heading {
+    top: 65vw;
+    font-size: 3.5rem;
+    width: 42rem;
+  }
+
+  .customer-heading,
+  .team-heading,
+  .contact-heading {
+    font-size: 6rem;
+  }
+
+  .customer,
+  .team-member {
+    margin: 5rem 0;
+  }
+
+  .contact-section {
+    height: auto;
+  }
+
+  .form-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .contact-form {
+    box-shadow: 1rem 1rem 2rem #aaa;
+  }
+
+  .contact-form:hover {
+    box-shadow: 2rem 2rem 3rem #aaa;
+  }
+
+  .copyright {
+    font-size: 1.8rem;
+    margin: 5rem;
+    align-items: center;
+  }
+
+  .scroll-up-btn {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+/* End of responsive design */
