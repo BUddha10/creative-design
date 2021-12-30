@@ -565,4 +565,87 @@ html {
     margin-bottom: 5rem;
   }
 }
+
+@media (max-width: 950px) {
+  .floating-bg {
+    top: -100vw;
+  }
+
+  .header-heading {
+    top: 40vw;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  .floating-bg {
+    top: -90vw;
+  }
+
+  .header-heading {
+    top: 48vw;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+
+  .floating-bg {
+    top: -70vw;
+  }
+
+  .header-heading {
+    top: 65vw;
+    font-size: 3.5rem;
+    width: 42rem;
+  }
+
+  .customer-heading,
+  .team-heading,
+  .contact-heading {
+    font-size: 6rem;
+  }
+
+  .customer,
+  .team-member {
+    margin: 5rem 0;
+  }
+
+  .contact-section {
+    height: auto;
+  }
+
+  .form-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .contact-form {
+    box-shadow: 1rem 1rem 2rem #aaa;
+  }
+
+  .contact-form:hover {
+    box-shadow: 2rem 2rem 3rem #aaa;
+  }
+
+  .copyright {
+    font-size: 1.8rem;
+    margin: 5rem;
+    align-items: center;
+  }
+
+  .scroll-up-btn {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
 /* End of responsive design */
